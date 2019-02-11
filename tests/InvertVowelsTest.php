@@ -81,7 +81,7 @@ class InvertVowelsTest extends TestCase
         ];
 
         $options['includeOriginalString'] = false;
-        $permutations = $InvertVowels->getPermutations($options);
+        $permutations = array_values($InvertVowels->getPermutations($options));
 
         $this->assertEquals($expected, $permutations);
     }

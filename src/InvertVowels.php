@@ -58,7 +58,7 @@ class InvertVowels
         }
 
         if ($options['includeOriginalString'] === false) {
-            unset($mutations[array_search($this->string)]);
+            unset($mutations[array_search($this->string, $mutations)]);
         }
 
         return $mutations;
