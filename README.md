@@ -1,7 +1,7 @@
 # code-puzzles
 
 ## Challenge #1:
-Find every permutation of a string where every repeating vowel pair is inverted.
+Find every permutation of a string where every repeating vowel pair is reversed.
 
 Example:
 
@@ -15,4 +15,6 @@ Given 'road boat phoenix', you should return an array with values:
 'road baot pheonix', // 2,3
 'raod baot pheonix', // 1,2,3
 ```
-This should work case-insensitively.
+The numbers above represent the vowel pair that has been changed.  In the first line, only the first vowel pair was reversed. In the second line, only the second, 3rd line, only the third.  In the fourth line, the first and second were reversed, etc.
+
+Vowels are defined as `'a, 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'`.
